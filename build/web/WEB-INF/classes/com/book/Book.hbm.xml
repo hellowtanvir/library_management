@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 18, 2020 9:36:31 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.book.Book" table="book" catalog="bookdb" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="45" />
+        </property>
+        <property name="author" type="string">
+            <column name="author" length="45" />
+        </property>
+        <property name="publication" type="string">
+            <column name="publication" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

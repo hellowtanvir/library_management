@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <td> Book Id:  <h:inputText value="#{book.id}"></h:inputText></td> <br></br>
+            <td> Book Name: <h:inputText value="#{book.name}"></h:inputText> </td> <br></br>
+            <td>Book Author: <h:inputText value="#{book.author}"></h:inputText> </td> <br></br>
+            <td>Book Publication: <h:inputText value="#{book.publication}"></h:inputText> </td> <br></br>
+            <td><h:commandButton value="Submit" action="#{book.doInsert()}"> </h:commandButton> </td>
+        </h:form>
+        <a href="show.xhtml"> Show </a>
+    </h:body>
+</html>
+

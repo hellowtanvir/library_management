@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            
+            <table>
+                <tr>
+                    <th>Book Id</th>
+                    <th>Book Name</th>
+                    <th>Book Author</th>
+                    <th>Book Publication</th>
+                </tr>
+                <c:forEach var="a" items="#{book.allStudent}">
+                <tr>
+                    <td><h:outputText value="#{a.id}"/></td>
+                    <td><h:outputText value="#{a.name}"/></td>
+                    <td><h:outputText value="#{a.author}"/></td>
+                    <td><h:outputText value="#{a.publication}"/></td>
+                </tr>
+            </c:forEach>
+                </table>
+        </h:form>
+    </h:body>
+</html>
+
